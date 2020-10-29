@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="AnnotationsSuite">
+   <!-- 查看各个注解的执行顺序 -->
+   <test name="AnnotationsTest">
+     <classes>
+        <class name="com.trustkernel.kpp.api.testcase.AnnotationsTest"/>
+     </classes>
+   </test>
+     <!-- <test preserve-order="true" name="all">
+       <packages>
+          <package name="com.trustkernel.kpp.api.testcase" />
+       </packages>
+   </test> -->
+</suite>

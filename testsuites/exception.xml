@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="ExceptionSuite">
+  <test name="ExceptionTest">
+     <classes>
+       <class name="com.trustkernel.kpp.api.testcase.ExceptionTest"/>
+     </classes>
+  </test>
+</suite>

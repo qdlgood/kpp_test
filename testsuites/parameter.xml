@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="ParameterSuite">
+  <test name="ParameterTest">
+     <parameter name="name" value="Jack" />
+     <parameter name="age" value="18" />
+     <classes>
+        <class name="com.trustkernel.kpp.api.testcase.ParameterTest"/>
+     </classes>
+  </test>
+</suite>

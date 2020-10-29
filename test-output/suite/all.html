@@ -1,0 +1,448 @@
+<html>
+<head>
+<title>TestNG:  all</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>all</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>31/4/1</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Sep 25 11:13:59 CST 2020</td>
+</tr>
+<tr><td>Total time:</td><td>4 seconds (4176 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.trustkernel.kpp.api.testcase.DependsOnMethodTest.dependGroupsTest2()'><b>dependGroupsTest2</b><br>Test class: com.trustkernel.kpp.api.testcase.DependsOnMethodTest</td>
+<td><div><pre>java.lang.AssertionError: error...
+	at com.trustkernel.kpp.api.testcase.DependsOnMethodTest.dependGroupsTest2(DependsOnMethodTest.java:31)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace188576144", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace188576144'><pre>java.lang.AssertionError: error...
+	at org.testng.Assert.fail(Assert.java:96)
+	at com.trustkernel.kpp.api.testcase.DependsOnMethodTest.dependGroupsTest2(DependsOnMethodTest.java:31)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+</pre></div></td>
+<td>0</td>
+<td>com.trustkernel.kpp.api.testcase.DependsOnMethodTest@6895a785</td></tr>
+<tr>
+<td title='com.trustkernel.kpp.api.testcase.ParameterTest.paramTest()'><b>paramTest</b><br>Test class: com.trustkernel.kpp.api.testcase.ParameterTest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;name&apos; is required by @Test on method paramTest but has not been marked @Optional or defined
+in E:\APITestProject\kpp_ApiAutoFrame\testsuites\testng.xml
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2124046270", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2124046270'><pre>org.testng.TestNGException: 
+Parameter &apos;name&apos; is required by @Test on method paramTest but has not been marked @Optional or defined
+in E:\APITestProject\kpp_ApiAutoFrame\testsuites\testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:769)
+	at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:49)
+	at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:37)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:924)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+</pre></div></td>
+<td>0</td>
+<td>com.trustkernel.kpp.api.testcase.ParameterTest@5a1c0542</td></tr>
+<tr>
+<td title='com.trustkernel.kpp.api.testcase.ExceptionTest.runTimeExceptionFailed()'><b>runTimeExceptionFailed</b><br>Test class: com.trustkernel.kpp.api.testcase.ExceptionTest</td>
+<td><div><pre>org.testng.TestException: 
+Method ExceptionTest.runTimeExceptionFailed()[pri:0, instance:com.trustkernel.kpp.api.testcase.ExceptionTest@184f6be2] should have thrown an exception of type class java.lang.RuntimeException
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1361289747", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1361289747'><pre>org.testng.TestException: 
+Method ExceptionTest.runTimeExceptionFailed()[pri:0, instance:com.trustkernel.kpp.api.testcase.ExceptionTest@184f6be2] should have thrown an exception of type class java.lang.RuntimeException
+	at org.testng.internal.ExpectedExceptionsHolder.noException(ExpectedExceptionsHolder.java:80)
+	at org.testng.internal.Invoker.considerExceptions(Invoker.java:1140)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:615)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+</pre></div></td>
+<td>0</td>
+<td>com.trustkernel.kpp.api.testcase.ExceptionTest@184f6be2</td></tr>
+<tr>
+<td title='com.trustkernel.kpp.api.testcase.TimeOutTest.testFailed()'><b>testFailed</b><br>Test class: com.trustkernel.kpp.api.testcase.TimeOutTest</td>
+<td><div><pre>org.testng.internal.thread.ThreadTimeoutException: Method com.trustkernel.kpp.api.testcase.TimeOutTest.testFailed() didn&apos;t finish within the time-out 2000
+</pre></div><a href='#' onClick='toggleBox("stack-trace1943325854", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1943325854'><pre>org.testng.internal.thread.ThreadTimeoutException: Method com.trustkernel.kpp.api.testcase.TimeOutTest.testFailed() didn&apos;t finish within the time-out 2000
+</pre></div></td>
+<td>2</td>
+<td>com.trustkernel.kpp.api.testcase.TimeOutTest@396f6598</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.trustkernel.kpp.api.testcase.ExceptionTest.arithmeticException()'><b>arithmeticException</b><br>Test class: com.trustkernel.kpp.api.testcase.ExceptionTest</td>
+<td><div><pre>java.lang.ArithmeticException: / by zero
+	at com.trustkernel.kpp.api.testcase.ExceptionTest.arithmeticException(ExceptionTest.java:32)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1873859565", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1873859565'><pre>java.lang.ArithmeticException: / by zero
+	at com.trustkernel.kpp.api.testcase.ExceptionTest.arithmeticException(ExceptionTest.java:32)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+</pre></div></td>
+<td>0</td>
+<td>com.trustkernel.kpp.api.testcase.ExceptionTest@184f6be2</td></tr>
+<tr>
+<td title='com.trustkernel.kpp.api.testcase.DependsOnMethodTest.dependGroupsTest1()'><b>dependGroupsTest1</b><br>Test class: com.trustkernel.kpp.api.testcase.DependsOnMethodTest</td>
+<td></td>
+<td>0</td>
+<td>com.trustkernel.kpp.api.testcase.DependsOnMethodTest@6895a785</td></tr>
+<tr>
+<td title='com.trustkernel.kpp.api.testcase.DependsOnMethodTest.dependGroupsTest3()'><b>dependGroupsTest3</b><br>Test class: com.trustkernel.kpp.api.testcase.DependsOnMethodTest</td>
+<td></td>
+<td>0</td>
+<td>com.trustkernel.kpp.api.testcase.DependsOnMethodTest@6895a785</td></tr>
+<tr>
+<td title='com.trustkernel.kpp.api.testcase.DependsOnMethodTest.dependTest()'><b>dependTest</b><br>Test class: com.trustkernel.kpp.api.testcase.DependsOnMethodTest</td>
+<td></td>
+<td>0</td>
+<td>com.trustkernel.kpp.api.testcase.DependsOnMethodTest@6895a785</td></tr>
+<tr>
+<td title='com.trustkernel.kpp.api.testcase.DependsOnMethodTest.dependTest2()'><b>dependTest2</b><br>Test class: com.trustkernel.kpp.api.testcase.DependsOnMethodTest</td>
+<td></td>
+<td>0</td>
+<td>com.trustkernel.kpp.api.testcase.DependsOnMethodTest@6895a785</td></tr>
+<tr>
+<td title='com.trustkernel.kpp.api.testcase.AnnotationsTest.exit()'><b>exit</b><br>Test class: com.trustkernel.kpp.api.testcase.AnnotationsTest</td>
+<td></td>
+<td>0</td>
+<td>com.trustkernel.kpp.api.testcase.AnnotationsTest@10bbd20a</td></tr>
+<tr>
+<td title='com.trustkernel.kpp.api.testcase.DataProviderTest.getUser()'><b>getUser</b><br>Test class: com.trustkernel.kpp.api.testcase.DataProviderTest<br>Parameters: user:{name: lisi, sex: 男, age: 15 }</td>
+<td></td>
+<td>0</td>
+<td>com.trustkernel.kpp.api.testcase.DataProviderTest@48503868</td></tr>
+<tr>
+<td title='com.trustkernel.kpp.api.testcase.DataProviderTest.getUser()'><b>getUser</b><br>Test class: com.trustkernel.kpp.api.testcase.DataProviderTest<br>Parameters: user:{name: wangwu, sex: 男, age: 16 }</td>
+<td></td>
+<td>0</td>
+<td>com.trustkernel.kpp.api.testcase.DataProviderTest@48503868</td></tr>
+<tr>
+<td title='com.trustkernel.kpp.api.testcase.DataProviderTest.getUser()'><b>getUser</b><br>Test class: com.trustkernel.kpp.api.testcase.DataProviderTest<br>Parameters: user:{name: zhangsan, sex: 男, age: 17 }</td>
+<td></td>
+<td>0</td>
+<td>com.trustkernel.kpp.api.testcase.DataProviderTest@48503868</td></tr>
+<tr>
+<td title='com.trustkernel.kpp.api.testcase.DataProviderTest.getUsers()'><b>getUsers</b><br>Test class: com.trustkernel.kpp.api.testcase.DataProviderTest<br>Parameters: [user:{name: lisi, sex: 男, age: 15 }, user:{name: wangwu, sex: 男, age: 16 }, user:{name: zhangsan, sex: 男, age: 17 }]</td>
+<td></td>
+<td>0</td>
+<td>com.trustkernel.kpp.api.testcase.DataProviderTest@48503868</td></tr>
+<tr>
+<td title='com.trustkernel.kpp.api.testcase.IgnoreTest.ignore2()'><b>ignore2</b><br>Test class: com.trustkernel.kpp.api.testcase.IgnoreTest</td>
+<td></td>
+<td>0</td>
+<td>com.trustkernel.kpp.api.testcase.IgnoreTest@56aac163</td></tr>
+<tr>
+<td title='com.trustkernel.kpp.api.testcase.IgnoreTest.ignore3()'><b>ignore3</b><br>Test class: com.trustkernel.kpp.api.testcase.IgnoreTest</td>
+<td></td>
+<td>0</td>
+<td>com.trustkernel.kpp.api.testcase.IgnoreTest@56aac163</td></tr>
+<tr>
+<td title='com.trustkernel.kpp.api.testcase.AnnotationsTest.login()'><b>login</b><br>Test class: com.trustkernel.kpp.api.testcase.AnnotationsTest</td>
+<td></td>
+<td>0</td>
+<td>com.trustkernel.kpp.api.testcase.AnnotationsTest@10bbd20a</td></tr>
+<tr>
+<td title='com.trustkernel.kpp.api.testcase.DataProviderTest.manyDataProviderTest()'><b>manyDataProviderTest</b><br>Test class: com.trustkernel.kpp.api.testcase.DataProviderTest<br>Parameters: A, 20, 中国, 180</td>
+<td></td>
+<td>0</td>
+<td>com.trustkernel.kpp.api.testcase.DataProviderTest@48503868</td></tr>
+<tr>
+<td title='com.trustkernel.kpp.api.testcase.DataProviderTest.manyDataProviderTest()'><b>manyDataProviderTest</b><br>Test class: com.trustkernel.kpp.api.testcase.DataProviderTest<br>Parameters: B, 21, USA, 150</td>
+<td></td>
+<td>0</td>
+<td>com.trustkernel.kpp.api.testcase.DataProviderTest@48503868</td></tr>
+<tr>
+<td title='com.trustkernel.kpp.api.testcase.DataProviderTest.manyDataProviderTest()'><b>manyDataProviderTest</b><br>Test class: com.trustkernel.kpp.api.testcase.DataProviderTest<br>Parameters: C, 22, AUS, 160</td>
+<td></td>
+<td>0</td>
+<td>com.trustkernel.kpp.api.testcase.DataProviderTest@48503868</td></tr>
+<tr>
+<td title='com.trustkernel.kpp.api.testcase.DataProviderTest.manyDataProviderTest()'><b>manyDataProviderTest</b><br>Test class: com.trustkernel.kpp.api.testcase.DataProviderTest<br>Parameters: D, 23, CAN, 170</td>
+<td></td>
+<td>0</td>
+<td>com.trustkernel.kpp.api.testcase.DataProviderTest@48503868</td></tr>
+<tr>
+<td title='com.trustkernel.kpp.api.testcase.DataProviderTest.oneDataProviderTest()'><b>oneDataProviderTest</b><br>Test class: com.trustkernel.kpp.api.testcase.DataProviderTest<br>Parameters: 不</td>
+<td></td>
+<td>0</td>
+<td>com.trustkernel.kpp.api.testcase.DataProviderTest@48503868</td></tr>
+<tr>
+<td title='com.trustkernel.kpp.api.testcase.DataProviderTest.oneDataProviderTest()'><b>oneDataProviderTest</b><br>Test class: com.trustkernel.kpp.api.testcase.DataProviderTest<br>Parameters: 知</td>
+<td></td>
+<td>0</td>
+<td>com.trustkernel.kpp.api.testcase.DataProviderTest@48503868</td></tr>
+<tr>
+<td title='com.trustkernel.kpp.api.testcase.DataProviderTest.oneDataProviderTest()'><b>oneDataProviderTest</b><br>Test class: com.trustkernel.kpp.api.testcase.DataProviderTest<br>Parameters: 所</td>
+<td></td>
+<td>0</td>
+<td>com.trustkernel.kpp.api.testcase.DataProviderTest@48503868</td></tr>
+<tr>
+<td title='com.trustkernel.kpp.api.testcase.DataProviderTest.oneDataProviderTest()'><b>oneDataProviderTest</b><br>Test class: com.trustkernel.kpp.api.testcase.DataProviderTest<br>Parameters: 措</td>
+<td></td>
+<td>0</td>
+<td>com.trustkernel.kpp.api.testcase.DataProviderTest@48503868</td></tr>
+<tr>
+<td title='com.trustkernel.kpp.api.testcase.ExceptionTest.runTimeExceptionSuccess()'><b>runTimeExceptionSuccess</b><br>Test class: com.trustkernel.kpp.api.testcase.ExceptionTest</td>
+<td><div><pre>java.lang.RuntimeException
+	at com.trustkernel.kpp.api.testcase.ExceptionTest.runTimeExceptionSuccess(ExceptionTest.java:22)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace999609945", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace999609945'><pre>java.lang.RuntimeException
+	at com.trustkernel.kpp.api.testcase.ExceptionTest.runTimeExceptionSuccess(ExceptionTest.java:22)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+</pre></div></td>
+<td>0</td>
+<td>com.trustkernel.kpp.api.testcase.ExceptionTest@184f6be2</td></tr>
+<tr>
+<td title='com.trustkernel.kpp.api.testcase.MultiThreadOnXmlTest.test1()'><b>test1</b><br>Test class: com.trustkernel.kpp.api.testcase.MultiThreadOnXmlTest</td>
+<td></td>
+<td>0</td>
+<td>com.trustkernel.kpp.api.testcase.MultiThreadOnXmlTest@1f7030a6</td></tr>
+<tr>
+<td title='com.trustkernel.kpp.api.testcase.MultiThreadOnXmlTest.test2()'><b>test2</b><br>Test class: com.trustkernel.kpp.api.testcase.MultiThreadOnXmlTest</td>
+<td></td>
+<td>0</td>
+<td>com.trustkernel.kpp.api.testcase.MultiThreadOnXmlTest@1f7030a6</td></tr>
+<tr>
+<td title='com.trustkernel.kpp.api.testcase.MultiThreadOnXmlTest.test3()'><b>test3</b><br>Test class: com.trustkernel.kpp.api.testcase.MultiThreadOnXmlTest</td>
+<td></td>
+<td>0</td>
+<td>com.trustkernel.kpp.api.testcase.MultiThreadOnXmlTest@1f7030a6</td></tr>
+<tr>
+<td title='com.trustkernel.kpp.api.testcase.TsetNGSimpleTest.testAdd()'><b>testAdd</b><br>Test class: com.trustkernel.kpp.api.testcase.TsetNGSimpleTest</td>
+<td></td>
+<td>0</td>
+<td>com.trustkernel.kpp.api.testcase.TsetNGSimpleTest@394e1a0f</td></tr>
+<tr>
+<td title='com.trustkernel.kpp.api.testcase.TimeOutTest.testSuccess()'><b>testSuccess</b><br>Test class: com.trustkernel.kpp.api.testcase.TimeOutTest</td>
+<td></td>
+<td>2</td>
+<td>com.trustkernel.kpp.api.testcase.TimeOutTest@396f6598</td></tr>
+<tr>
+<td title='com.trustkernel.kpp.api.testcase.DataProviderTest.twoDataProviderTest()'><b>twoDataProviderTest</b><br>Test class: com.trustkernel.kpp.api.testcase.DataProviderTest<br>Parameters: zhangsan, 10</td>
+<td></td>
+<td>0</td>
+<td>com.trustkernel.kpp.api.testcase.DataProviderTest@48503868</td></tr>
+<tr>
+<td title='com.trustkernel.kpp.api.testcase.DataProviderTest.twoDataProviderTest()'><b>twoDataProviderTest</b><br>Test class: com.trustkernel.kpp.api.testcase.DataProviderTest<br>Parameters: lisi, 11</td>
+<td></td>
+<td>0</td>
+<td>com.trustkernel.kpp.api.testcase.DataProviderTest@48503868</td></tr>
+<tr>
+<td title='com.trustkernel.kpp.api.testcase.DataProviderTest.twoDataProviderTest()'><b>twoDataProviderTest</b><br>Test class: com.trustkernel.kpp.api.testcase.DataProviderTest<br>Parameters: wangwu, 12</td>
+<td></td>
+<td>0</td>
+<td>com.trustkernel.kpp.api.testcase.DataProviderTest@48503868</td></tr>
+<tr>
+<td title='com.trustkernel.kpp.api.testcase.DataProviderTest.twoDataProviderTest()'><b>twoDataProviderTest</b><br>Test class: com.trustkernel.kpp.api.testcase.DataProviderTest<br>Parameters: zhaoliu, 13</td>
+<td></td>
+<td>0</td>
+<td>com.trustkernel.kpp.api.testcase.DataProviderTest@48503868</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.trustkernel.kpp.api.testcase.DependsOnMethodTest.dependGroupsTest4()'><b>dependGroupsTest4</b><br>Test class: com.trustkernel.kpp.api.testcase.DependsOnMethodTest</td>
+<td><div><pre>java.lang.Throwable: Method DependsOnMethodTest.dependGroupsTest4()[pri:0, instance:com.trustkernel.kpp.api.testcase.DependsOnMethodTest@6895a785] depends on not successfully finished methods in group &quot;recharge&quot;
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1667689440", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1667689440'><pre>java.lang.Throwable: Method DependsOnMethodTest.dependGroupsTest4()[pri:0, instance:com.trustkernel.kpp.api.testcase.DependsOnMethodTest@6895a785] depends on not successfully finished methods in group &quot;recharge&quot;
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+</pre></div></td>
+<td>0</td>
+<td>null</td></tr>
+</table><p>
+</body>
+</html>

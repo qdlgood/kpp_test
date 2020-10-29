@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="groupSuite" preserve-order="true">
+   <!-- 当@Test注解在方法名上 -->
+   <test name="GroupsOnMethodTest">
+      <groups>
+         <run>
+            <!-- 排除某个分组 -->
+            <exclude name="thirdParty"/>
+            <!-- 包含某个分组 -->
+            <include name="client"/>
+         </run>
+      </groups>
+      <classes>
+         <class name="com.trustkernel.kpp.api.testcase.groups.GroupsOnMethodTest"/>      
+      </classes>
+   </test>
+   <!-- 当@Test注解在类名上 -->
+   <test name="GroupsOnClassTest">
+       <groups>
+          <run>
+             <!-- 包含某个分组 -->
+             <include name="max"/>
+          </run>
+       </groups>
+       <classes>
+          <class name="com.trustkernel.kpp.api.testcase.groups.GroupsOnClassTest1"/>
+          <class name="com.trustkernel.kpp.api.testcase.groups.GroupsOnClassTest2"/>
+          <class name="com.trustkernel.kpp.api.testcase.groups.GroupsOnClassTest3"/>
+       </classes>
+       <!-- <packages>
+          <package name="com.trustkernel.kpp.api.testcase.groups" />
+       </packages> -->
+   </test>
+
+</suite>

@@ -1,0 +1,12 @@
+2020-10-29 11:31:12.318 [main] INFO  c.t.kpp.api.testcase.AnnotationsTest : execute beforeSuite1 method
+2020-10-29 11:31:12.323 [main] INFO  c.t.kpp.api.testcase.AnnotationsTest : execute beforeTest1 method
+2020-10-29 11:31:12.325 [main] INFO  c.t.kpp.api.testcase.AnnotationsTest : execute beforeClass1 method
+2020-10-29 11:31:12.325 [main] INFO  c.t.kpp.api.testcase.AnnotationsTest : execute beforeMethod1 method
+2020-10-29 11:31:12.325 [main] INFO  c.t.kpp.api.testcase.AnnotationsTest : 退出。。。
+2020-10-29 11:31:12.341 [main] INFO  c.t.kpp.api.testcase.AnnotationsTest : execute afterMethod2 method
+2020-10-29 11:31:12.341 [main] INFO  c.t.kpp.api.testcase.AnnotationsTest : execute beforeMethod1 method
+2020-10-29 11:31:12.341 [main] INFO  c.t.kpp.api.testcase.AnnotationsTest : 登录。。。
+2020-10-29 11:31:12.341 [main] INFO  c.t.kpp.api.testcase.AnnotationsTest : execute afterMethod2 method
+2020-10-29 11:31:12.341 [main] INFO  c.t.kpp.api.testcase.AnnotationsTest : execute afterClass2 method
+2020-10-29 11:31:12.341 [main] INFO  c.t.kpp.api.testcase.AnnotationsTest : execute afterTest2 method
+2020-10-29 11:31:12.357 [main] INFO  c.t.kpp.api.testcase.AnnotationsTest : execute afterSuite2 method

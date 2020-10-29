@@ -1,0 +1,159 @@
+<html>
+<head>
+<title>TestNG:  DataProviderTest</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>DataProviderTest</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>16/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sun Sep 27 17:37:31 CST 2020</td>
+</tr>
+<tr><td>Total time:</td><td>0 seconds (78 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.trustkernel.kpp.api.testcase.DataProviderTest.getUser()'><b>getUser</b><br>Test class: com.trustkernel.kpp.api.testcase.DataProviderTest<br>Parameters: user:{name: lisi, sex: 男, age: 15 }</td>
+<td></td>
+<td>0</td>
+<td>com.trustkernel.kpp.api.testcase.DataProviderTest@3e77a1ed</td></tr>
+<tr>
+<td title='com.trustkernel.kpp.api.testcase.DataProviderTest.getUser()'><b>getUser</b><br>Test class: com.trustkernel.kpp.api.testcase.DataProviderTest<br>Parameters: user:{name: wangwu, sex: 男, age: 16 }</td>
+<td></td>
+<td>0</td>
+<td>com.trustkernel.kpp.api.testcase.DataProviderTest@3e77a1ed</td></tr>
+<tr>
+<td title='com.trustkernel.kpp.api.testcase.DataProviderTest.getUser()'><b>getUser</b><br>Test class: com.trustkernel.kpp.api.testcase.DataProviderTest<br>Parameters: user:{name: zhangsan, sex: 男, age: 17 }</td>
+<td></td>
+<td>0</td>
+<td>com.trustkernel.kpp.api.testcase.DataProviderTest@3e77a1ed</td></tr>
+<tr>
+<td title='com.trustkernel.kpp.api.testcase.DataProviderTest.getUsers()'><b>getUsers</b><br>Test class: com.trustkernel.kpp.api.testcase.DataProviderTest<br>Parameters: [user:{name: lisi, sex: 男, age: 15 }, user:{name: wangwu, sex: 男, age: 16 }, user:{name: zhangsan, sex: 男, age: 17 }]</td>
+<td></td>
+<td>0</td>
+<td>com.trustkernel.kpp.api.testcase.DataProviderTest@3e77a1ed</td></tr>
+<tr>
+<td title='com.trustkernel.kpp.api.testcase.DataProviderTest.manyDataProviderTest()'><b>manyDataProviderTest</b><br>Test class: com.trustkernel.kpp.api.testcase.DataProviderTest<br>Parameters: A, 20, 中国, 180</td>
+<td></td>
+<td>0</td>
+<td>com.trustkernel.kpp.api.testcase.DataProviderTest@3e77a1ed</td></tr>
+<tr>
+<td title='com.trustkernel.kpp.api.testcase.DataProviderTest.manyDataProviderTest()'><b>manyDataProviderTest</b><br>Test class: com.trustkernel.kpp.api.testcase.DataProviderTest<br>Parameters: B, 21, USA, 150</td>
+<td></td>
+<td>0</td>
+<td>com.trustkernel.kpp.api.testcase.DataProviderTest@3e77a1ed</td></tr>
+<tr>
+<td title='com.trustkernel.kpp.api.testcase.DataProviderTest.manyDataProviderTest()'><b>manyDataProviderTest</b><br>Test class: com.trustkernel.kpp.api.testcase.DataProviderTest<br>Parameters: C, 22, AUS, 160</td>
+<td></td>
+<td>0</td>
+<td>com.trustkernel.kpp.api.testcase.DataProviderTest@3e77a1ed</td></tr>
+<tr>
+<td title='com.trustkernel.kpp.api.testcase.DataProviderTest.manyDataProviderTest()'><b>manyDataProviderTest</b><br>Test class: com.trustkernel.kpp.api.testcase.DataProviderTest<br>Parameters: D, 23, CAN, 170</td>
+<td></td>
+<td>0</td>
+<td>com.trustkernel.kpp.api.testcase.DataProviderTest@3e77a1ed</td></tr>
+<tr>
+<td title='com.trustkernel.kpp.api.testcase.DataProviderTest.oneDataProviderTest()'><b>oneDataProviderTest</b><br>Test class: com.trustkernel.kpp.api.testcase.DataProviderTest<br>Parameters: 不</td>
+<td></td>
+<td>0</td>
+<td>com.trustkernel.kpp.api.testcase.DataProviderTest@3e77a1ed</td></tr>
+<tr>
+<td title='com.trustkernel.kpp.api.testcase.DataProviderTest.oneDataProviderTest()'><b>oneDataProviderTest</b><br>Test class: com.trustkernel.kpp.api.testcase.DataProviderTest<br>Parameters: 知</td>
+<td></td>
+<td>0</td>
+<td>com.trustkernel.kpp.api.testcase.DataProviderTest@3e77a1ed</td></tr>
+<tr>
+<td title='com.trustkernel.kpp.api.testcase.DataProviderTest.oneDataProviderTest()'><b>oneDataProviderTest</b><br>Test class: com.trustkernel.kpp.api.testcase.DataProviderTest<br>Parameters: 所</td>
+<td></td>
+<td>0</td>
+<td>com.trustkernel.kpp.api.testcase.DataProviderTest@3e77a1ed</td></tr>
+<tr>
+<td title='com.trustkernel.kpp.api.testcase.DataProviderTest.oneDataProviderTest()'><b>oneDataProviderTest</b><br>Test class: com.trustkernel.kpp.api.testcase.DataProviderTest<br>Parameters: 措</td>
+<td></td>
+<td>0</td>
+<td>com.trustkernel.kpp.api.testcase.DataProviderTest@3e77a1ed</td></tr>
+<tr>
+<td title='com.trustkernel.kpp.api.testcase.DataProviderTest.twoDataProviderTest()'><b>twoDataProviderTest</b><br>Test class: com.trustkernel.kpp.api.testcase.DataProviderTest<br>Parameters: zhangsan, 10</td>
+<td></td>
+<td>0</td>
+<td>com.trustkernel.kpp.api.testcase.DataProviderTest@3e77a1ed</td></tr>
+<tr>
+<td title='com.trustkernel.kpp.api.testcase.DataProviderTest.twoDataProviderTest()'><b>twoDataProviderTest</b><br>Test class: com.trustkernel.kpp.api.testcase.DataProviderTest<br>Parameters: lisi, 11</td>
+<td></td>
+<td>0</td>
+<td>com.trustkernel.kpp.api.testcase.DataProviderTest@3e77a1ed</td></tr>
+<tr>
+<td title='com.trustkernel.kpp.api.testcase.DataProviderTest.twoDataProviderTest()'><b>twoDataProviderTest</b><br>Test class: com.trustkernel.kpp.api.testcase.DataProviderTest<br>Parameters: wangwu, 12</td>
+<td></td>
+<td>0</td>
+<td>com.trustkernel.kpp.api.testcase.DataProviderTest@3e77a1ed</td></tr>
+<tr>
+<td title='com.trustkernel.kpp.api.testcase.DataProviderTest.twoDataProviderTest()'><b>twoDataProviderTest</b><br>Test class: com.trustkernel.kpp.api.testcase.DataProviderTest<br>Parameters: zhaoliu, 13</td>
+<td></td>
+<td>0</td>
+<td>com.trustkernel.kpp.api.testcase.DataProviderTest@3e77a1ed</td></tr>
+</table><p>
+</body>
+</html>

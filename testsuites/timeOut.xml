@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="TimeOutSuite">
+  <test name="TimeOutTest">
+     <classes>
+       <class name="com.trustkernel.kpp.api.testcase.TimeOutTest"/>
+     </classes>
+  </test>
+</suite>
